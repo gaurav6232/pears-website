@@ -141,8 +141,9 @@ canvas{
     height: 100vh;
     background-color: #FFEFBC;
     /* background-color: #F3B105; */
-     
+     background-color: #28864C;
     /* background-color:  #28864C; */
+     color: #3E925E;
     position: relative;
 }
 .page-b h1{
@@ -157,9 +158,10 @@ canvas{
     height: 40vh;
     /* background-color: #28864C; */
     display: flex;
+    color: #FFFFFF;
     /* color: #FD8F45; */
     /* color: #4C7766; */
-    color: #462617;
+    /* color: #462617; */
 }
 
 .b-top-left{
@@ -234,8 +236,9 @@ canvas{
  
 
 .b-bot-textbox h1{
-    font-size:2rem;
+    font-size:1.5rem;
     margin-left: 40px;
+    font-weight: 200;
 }
 
 .b-bot-textbox i{
@@ -331,34 +334,74 @@ canvas{
  
 #c-1{
     position: relative;
+    background: url('https://images.unsplash.com/photo-1508717272800-9fff97da7e8f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover; /* Make sure the image covers the entire element */
+  background-position: center center; /* Center the image within the element */
+  background-repeat: no-repeat;
 
 }
 
 #c-2{
+   
     position: relative;
+    background: url('https://images.unsplash.com/photo-1550451757-43afd21bc356?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDUxfHx8ZW58MHx8fHx8');
     /* color: #A19270; */
+    background-size: cover; /* Make sure the image covers the entire element */
+    background-position: center center; /* Center the image within the element */
+    background-repeat: no-repeat;
 }
 #c-3{
+     
     position: relative;
+    background: url('https://plus.unsplash.com/premium_photo-1697898006641-fad9278161ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDczfHx8ZW58MHx8fHx8');
     /* color: #836C4C; */
+    background-size: cover; /* Make sure the image covers the entire element */
+    background-position: center center; /* Center the image within the element */
+    background-repeat: no-repeat;
 }
 
 #c-1 .c-image-box{
     height: 90vh;
-    width: 20vw;
+    width: 40vw;
+    clip-path: polygon(4% 0, 100% 0, 75% 100%, 26% 100%);
+    border: 4px solid #50321fd8;
+    background: url('https://images.unsplash.com/photo-1517196084897-498e0abd7c2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmFja2dyb3VuZCUyMGZvciUyMHBlYXJzJTIwYnJhbmR8ZW58MHx8MHx8fDA%3D');
+
+    overflow: hidden;
+    border-radius: 20%;
 }
 #c-2 .c-image-box{
     height: 90vh;
-    width: 20vw;
+    width: 40vw;
+    clip-path: polygon(4% 0, 100% 0, 75% 100%, 26% 100%);
+    border: 4px solid #50321fd8;
+    border-left: 4px solid #50321fd8;
+    background: url('https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJhY2tncm91bmQlMjBmb3IlMjBkYXJrJTIwY3JlYW0lMjBicmFuZHxlbnwwfHwwfHx8MA%3D%3D');
+    overflow: hidden;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #c-3 .c-image-box{
     height: 90vh;
     width: 40vw;
-    margin-left: 50vw;
+    clip-path: polygon(4% 0, 100% 0, 75% 100%, 26% 100%);
+    border: 4px solid #50321fd8;
+    background: url('https://plus.unsplash.com/premium_photo-1670044658714-686e136babc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE3fHxiYWNrZ3JvdW5kJTIwZm9yJTIwZGFyayUyMGNyZWFtJTIwYnJhbmR8ZW58MHx8MHx8fDA%3D');
+    background-color: red;
+    overflow: hidden;
+    border-radius: 20%;
+    margin-left: 20vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: end center;
+    animation-delay: 3;
 }
 
 #c-2 .c-image-box img{
-    width: 100%;
+    width: 50%;
     height: 100%;
     object-fit: cover;
     object-position: top;
@@ -387,7 +430,7 @@ canvas{
 .page-d{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #D0686C 20%, #C05464 50%, #8F4D68 80%);
+    background: linear-gradient(135deg, #D0686C 20%, #EDC155 50%, #8F4D68 80%);
     position: relative;
 }
 
@@ -401,7 +444,7 @@ canvas{
 .d-main{
     width: 25vw;
     height: 90vh;
-    background-color:  #E3A1AD;
+    background-color:  #EDC155;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -474,7 +517,7 @@ canvas{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #EE9874;
+    background-color: #28864C;
 }
 
 .page-e h1{
@@ -483,7 +526,7 @@ canvas{
     text-align: center;
     z-index: 999;
     position: fixed;
-    color: #462617;
+    color: #3CAD68;
     opacity: 60%;
 }
 
@@ -512,7 +555,7 @@ canvas{
      
 }
 
-.e-frist .e-box1{
+ .e-box1{
     width: 30vw;
     height: 60vh;
     background-color: #fff;
@@ -526,10 +569,31 @@ canvas{
     
 }
 
+.e-frist .e-box1 h2{
+    font-size: 1rem;
+
+}
+
 .h2-main{
     width: 80%;
     height: 10vh;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.port-img{
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 50%;
+}
+.port-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 #hed-line{
@@ -546,6 +610,7 @@ canvas{
     background-color: #fff;
     border-radius: 25px;
     margin-top: 8vh;
+    z-index: 999;
      
 }
 
@@ -576,6 +641,14 @@ canvas{
     margin-left: 10vw;
 }
 
+.e-box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+}
+
 
 .e-second .e-box2{
     width: 30vw;
@@ -584,6 +657,14 @@ canvas{
     border-radius: 25px;
     margin-top: 8vh;
     z-index: 9999;
+}
+
+.e-box2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
 }
 
 
@@ -648,13 +729,150 @@ canvas{
 .e-five{
     width: 100%;
     height: 50vh;
-    background-color: #FFEFBC;
+    background-color: #EDC155;
     margin-top: 65vh;
+    z-index: 99999;
+    position: relative;
 }
 
 .page-f{
     width: 100vw;
     height: 100vh;
-    background-color: #FFEFBC;
+    /* background-color: #FFEFBC; */
+    background-color: #EDC155;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
+
+.f-top{
+    width: 100%;
+    height: 20vh;
+}
+
+.f-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.f-center{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.img-box-f{
+    width: 25vw;
+    height: 30vw;
+    border-radius: 30px;
+     
+ 
+}
+
+.img-box-f video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.f-contact{
+    width: 65vw;
+    height: 20vw;
+    /* background-color: red; */
+    border-radius: 50px;
+     
+}
+
+.fc-top{
+    width: 40vw;
+
+}
+
+.fc-top h1{
+    font-size: 3.4rem;
+    font-weight: 600;
+    font-family: "Workhorse", cursive;
+    color: #4B1E1E;
+    text-align: center;
+}
+
+.fc-top h1 span {
+    
+        font-family: "Workhorse", cursive;
+    /* font-family: "Workhorse Script text Display" cursive; */
+  }
+
+.fc-bottom{
+    margin-left: 10vw;
+    font-family: "Workhorse", cursive;
+    width: 70%;
+    height: 15vh;
+    /* background-color: #3CAD68; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fc-bottom a {
+    text-decoration: none;
+    color: inherit; /* आइकनों का रंग */
+    font-size: 2rem; /* आइकन का साइज */
+    transition: color 0.3s ease; /* माउस ओवर पर स्मूथ ट्रांजिशन */
+}
+
+.fc-bottom  a:hover {
+    color: #ff4500; /* माउस ओवर पर रंग बदलें */
+}
+
+
+
+.f-bottom{
+    width: 100%;
+    height: 40vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 4px solid #000;
+    overflow: hidden;
+   
+}
+
+.fb-boxs{
+    width: 100vw;
+    height: 75%;
+    /* background-color: #3E925E; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    animation: scr 20s linear infinite;
+}
+
+.fb-box{
+    width: 15vw;
+    height: 80%;
+    margin-left: 20px;
+    flex-shrink: 0;
+
+}
+
+.fb-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+}
+
+@keyframes scr {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }

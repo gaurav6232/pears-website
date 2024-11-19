@@ -335,8 +335,8 @@ function boost(){
     }, 's');
     
      
-    gsap.to(".c-image-box", {
-      y:"-10%",
+    gsap.to("#c1-img", {
+      y:"-150%",
       x: "-90%", // Move image up
       rotate: -25,  
       scrollTrigger: {
@@ -362,7 +362,24 @@ function boost(){
           gsap.to("#c-2", { backgroundColor: self.progress >= 0.5 ? "#736751" : "#736751", duration: 0.5, ease: "power1.inOut" });
         }
       }
-    });
+    },'s1');
+
+
+    gsap.to("#c2-img", {
+      y:"-150%",
+      x: "-90%", // Move image up
+      rotate: -25,  
+      scrollTrigger: {
+        trigger: "#c-2", // Synchronize with #c-1 scroll position
+        scroller: "#main", // Locomotive Scroll container
+        start: "20% left",
+        duration: 2,
+        delay: 5,
+        rotate: '45deg',
+        scrub: 3,
+      }
+    }, 's1');
+    
     
   
     gsap.to("#c-3", {
@@ -377,7 +394,23 @@ function boost(){
           gsap.to("#c-3", { backgroundColor: self.progress >= 0.5 ? "#D4BB86" : "#D4BB86", duration: 0.5, ease: "power1.inOut" });
         }
       }
-    });
+    },'s2');
+
+    gsap.to("#c3-img", {
+      y:"-150%",
+      x: "-90%", // Move image up
+      rotate: -25,  
+      scrollTrigger: {
+        trigger: "#c-3", // Synchronize with #c-1 scroll position
+        scroller: "#main", // Locomotive Scroll container
+        start: "90% left",
+        duration: 2,
+        delay: 3,
+        rotate: '45deg',
+        scrub: 3,
+      }
+    }, 's2');
+    
 
 
 
