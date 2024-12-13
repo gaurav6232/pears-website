@@ -468,6 +468,8 @@ var tl = gsap.timeline({
 })
 tl.to(".e-overlay",{
   top:"-350%",
+  scrub: 3,
+  
 })
 
 
